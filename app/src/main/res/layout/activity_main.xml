@@ -5,15 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#7C2387"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="MAD_Alarm_Practical"
-        android:id="@+id/Textview1"
         android:textSize="25dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,14 +26,57 @@
         android:layout_height="450dp"
         android:layout_marginTop="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Textview1" >
 
-    <ImageView
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#A69A9D"
+            android:src="@drawable/img_1" />
+
+        <TextView
+        android:id="@+id/Textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Create Alarm Time"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="By pressing bttons,alarm can be created and canceled."
+        android:textSize="16dp"
+        android:layout_marginTop="250dp"/>
+
+        <TextView
+            android:id="@+id/Textview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/image1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="check current time by looking below real degital clock."
+            android:textSize="16dp"
+            android:layout_marginTop="305dp" />
 
-           android:src="@drawable/clock"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            app:icon="@drawable/baseline_add_alarm_24"
+            android:text="Create Alarm"
+            android:textSize="17dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
 
 
 
