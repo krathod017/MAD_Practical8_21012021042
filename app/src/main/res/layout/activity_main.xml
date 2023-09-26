@@ -12,9 +12,9 @@
         android:id="@+id/Textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="MAD_Alarm_Practical"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -24,7 +24,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Textview1">
 
@@ -32,7 +32,7 @@
             android:id="@+id/Textview2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="195dp"
+            android:layout_marginTop="192dp"
             android:text="  Create Alarm Time"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -41,7 +41,7 @@
             android:id="@+id/Textview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="240dp"
+            android:layout_marginTop="220dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="By pressing bttons,alarm can be created and canceled."
@@ -51,7 +51,7 @@
             android:id="@+id/Textview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="280dp"
+            android:layout_marginTop="245dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="check current time by looking below real degital clock."
@@ -61,7 +61,7 @@
             android:id="@+id/Textview5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="285dp"
             android:paddingStart="80dp"
             android:text="11:45:17 PM Aug,14 2022"
             android:textSize="18dp"
@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="320dp"
             android:text="Create Alarm"
             android:textSize="17dp"
             app:icon="@drawable/baseline_add_alarm_24" />
@@ -90,15 +90,16 @@
         android:layout_width="436dp"
         android:layout_height="354dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="549dp">
+        tools:layout_editor_absoluteY="420dp">
 
 
         <TextView
             android:id="@+id/Textview6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="190dp"
             android:paddingStart="150dp"
             android:text="Set Alarm Time:"
             android:textSize="20dp"
@@ -107,7 +108,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="220dp"
             android:paddingStart="165dp"
             android:text="11:49 00PM"
             android:textSize="20dp"
@@ -125,16 +126,14 @@
             tools:layout_editor_absoluteY="591dp" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-
-            android:id="@+id/Button2"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/baseline_alarm_off_24"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="255dp"
             android:text="Cancel Alarm"
             android:textSize="17dp"
-            android:layout_marginTop="250dp"
-            android:paddingStart="20dp"
-            />
+            app:icon="@drawable/baseline_alarm_off_24" />
 
     </com.google.android.material.card.MaterialCardView>
 

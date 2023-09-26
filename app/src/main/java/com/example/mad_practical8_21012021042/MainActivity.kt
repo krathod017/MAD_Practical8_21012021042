@@ -5,15 +5,19 @@ import android.app.PendingIntent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.WindowCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        WindowCompat.setDecorFitsSystemWindows(window,false)
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.toolbar)
         setContentView(R.layout.activity_main)
     }
 }
 fun setalarm(militime:Long,action:String) {
-    val intentalarm = Intent(application, AlarmBroadcastReciever::class.java)
+    val intentalarm = Intent(applicationContext, AlarmBroadcastReciever::class.java)
     intentalarm.putExtra(AlarmBroadcastReciever.ALARMKEY)
     val pendingalarm = PendingIntent.getBroadcast(applicationContext, 2345, intentalarm, PendingIntent.FLAG_UPDATE_CURRENT)
     val manager = getSystemService(ALARM_SERVICE)as AlarmManager
