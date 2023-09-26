@@ -14,7 +14,7 @@ class AlarmBroadcastReciever : BroadcastReceiver() {
         // This method is called when the BroadcastReceiver is receiving an Intent broadcast.
       val data=intent.getStringExtra(ALARMKEY)
         val intentService = Intent(context,AlarmService::class.java)
-        if (data==ALARM_START) {
+        if (data==ALARMKEY) {
 
             context.startService(intentService)
         }

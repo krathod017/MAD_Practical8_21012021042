@@ -13,6 +13,7 @@ class AlarmService : Service() {
     }
 
     override fun onDestroy() {
+        player.stop()
         super.onDestroy()
     }
 
@@ -21,6 +22,6 @@ class AlarmService : Service() {
             player=MediaPlayer.create(this,R.raw.alarm)
             player.start()
         }
-        return super.onStartCommand(intent, flags, startId)
+        return START_STICKY
     }
 }

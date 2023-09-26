@@ -12,7 +12,7 @@
         android:id="@+id/Textview1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="MAD_Alarm_Practical"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -24,58 +24,58 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Textview1" >
+        app:layout_constraintTop_toBottomOf="@+id/Textview1">
 
         <TextView
-        android:id="@+id/Textview2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="  Create Alarm Time"
-        android:textSize="18dp"
-        android:textStyle="bold"/>
+            android:id="@+id/Textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:text="  Create Alarm Time"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/Textview3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"
-        android:text="By pressing bttons,alarm can be created and canceled."
-        android:textSize="16dp"
-        android:layout_marginTop="250dp"/>
+        <TextView
+            android:id="@+id/Textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="By pressing bttons,alarm can be created and canceled."
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/Textview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingEnd="10dp"
+            android:layout_marginTop="280dp"
             android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:text="check current time by looking below real degital clock."
-            android:textSize="16dp"
-            android:layout_marginTop="305dp" />
+            android:textSize="16dp" />
 
         <TextView
             android:id="@+id/Textview5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:paddingStart="80dp"
             android:text="11:45:17 PM Aug,14 2022"
             android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_marginTop="350dp"
-            android:paddingStart="80dp"/>
+            android:textStyle="bold" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="390dp"
-            app:icon="@drawable/baseline_add_alarm_24"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="360dp"
             android:text="Create Alarm"
             android:textSize="17dp"
-            android:layout_marginStart="20dp"/>
+            app:icon="@drawable/baseline_add_alarm_24" />
 
         <ImageView
             android:id="@+id/image1"
@@ -91,7 +91,7 @@
         android:layout_height="354dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="582dp">
+        tools:layout_editor_absoluteY="549dp">
 
 
         <TextView
@@ -99,18 +99,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
+            android:paddingStart="150dp"
             android:text="Set Alarm Time:"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:paddingStart="150dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="230dp"
+            android:paddingStart="165dp"
             android:text="11:49 00PM"
-            android:textStyle="bold"/>
-
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
         <ImageView
@@ -122,6 +123,18 @@
             app:layout_constraintHorizontal_bias="0.363"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="591dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/baseline_alarm_off_24"
+            android:text="Cancel Alarm"
+            android:textSize="17dp"
+            android:layout_marginTop="250dp"
+            android:paddingStart="20dp"
+            />
 
     </com.google.android.material.card.MaterialCardView>
 
