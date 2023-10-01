@@ -61,7 +61,7 @@
             android:id="@+id/Textview5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="285dp"
+            android:layout_marginTop="280dp"
             android:paddingStart="80dp"
             android:text="11:45:17 PM Aug,14 2022"
             android:textSize="18dp"
@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="310dp"
             android:text="Create Alarm"
             android:textSize="17dp"
             app:icon="@drawable/baseline_add_alarm_24" />
@@ -130,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="255dp"
+            android:layout_marginTop="250dp"
             android:text="Cancel Alarm"
             android:textSize="17dp"
             app:icon="@drawable/baseline_alarm_off_24" />

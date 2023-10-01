@@ -8,7 +8,7 @@ import android.os.IBinder
 class AlarmService : Service() {
 
     lateinit var player: MediaPlayer
-    override fun onBind(intent: Intent): IBinder {
+    override fun onBind(intent: Intent?): IBinder {
         TODO("Return the communication channel to the service.")
     }
 
