@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
         android:layout_width="match_parent"
         android:layout_height="450dp"
         android:layout_marginTop="8dp"
@@ -87,6 +88,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
         android:layout_width="436dp"
         android:layout_height="354dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,6 +108,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/textAlarmtime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
@@ -137,9 +140,4 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
+ </androidx.constraintlayout.widget.ConstraintLayout>
